@@ -1,0 +1,403 @@
+{
+  "v": "5.8.1",
+  "fr": 30,
+  "ip": 0,
+  "op": 270,
+  "w": 284,
+  "h": 134,
+  "nm": "Comp 4",
+  "ddd": 0,
+  "assets": [
+    {
+      "id": "image_0",
+      "w": 37,
+      "h": 287,
+      "u": "",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAEfCAYAAADGCA98AAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMrSURBVHgB7dZPTlNRFMfxcx4SmNmJgYRJd2BZgbADnChhIuwAVwCsQNxBR4bggO6AsgJxBdaBCRoHnRbpO97XWGhphS//2jf4fRPyHuWRfnLu5RYzxXJ7YLFWqdjsbNVmZmoW8Tx9Vcy9na7fLcvafnDWtDt2L1QByefnt7OIV2G2ctvz6U2aFl63zE4SsgWevwNmfbFqke+E+abds7CoZ57t3YTDqO764q5H7Njj1IqwjzOHP/ftPqhiOpHnR2mf1Oyxi2j4+fmWN9pto6geKOI43Vbt6Wq5++rgcvqUQXYJ63SW+xPLxj1R/HVNEFRUjbm5o/43Y1H53NyuTQ7Ub6X7ZmG7uBlZvthYqkX34otNo4i2Z9ny6KS6Fx9sWrlX8nQODk0qbe6Vf3tpqg1PKvJ3VoKGUOnjY81K0CWqWLp0qVgJuppUxEsrSYPLV7WSNDCpMqK8HPupKLMSJhRNKJpQNKFoQtGEoglFE4omFE0omlA0oWhC0YSiCUUTiiYUTSiaUDShaELRhKIJRROKJhRNKJpQNKFoQtGEoglFE4omFE0omlA0oWhC0YSiCUUTiiYUTSiaUDShaELRhKIJRROKJhRNKJpQNKFoQtGEoglFE4omFE0omlA0oWhC0YSiCUUTiiYUTSiaUDShaELRhKIJRROKJhRNKJpQNKFoQtGEoglFE4omFE0omlA0oWhC0YSiCUUTiiYUTSiaUDShaELRhKIJRROKJhRNKJpQNKFoQtGEoglFE4omFE0omlA0oWhC0YSiCUUTiiYUTSiaUDShaELRhKIJRROKJhRNKJpQNKFoJUeFta0kXaE8SogyP7WSNDAp/2ol6Qo1P19MqhRLeInyeqsAlWIJh44Ed9+zEuTXX8jfLnxLl6pNr+bI4ekR722KpdXaGkUd/mqkS9OmkEe+7wdnrbEfM4U2XVo22Vp2/qe3p8ejktZnnr22yR0RrTSIVW+0e+/nNz0ZG0u16F4cp9uKPTUoDaL/wo3/JfinH6dpYqv2dEs5AroVZX1Y8YsWdXvEepu601m+Dur9zO5QrL/YjMh27GHnWNPz7q5//n3yvwf+AhJ+w7OsKkyhAAAAAElFTkSuQmCC",
+      "e": 1
+    },
+    {
+      "id": "image_1",
+      "w": 923,
+      "h": 16,
+      "u": "",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA5sAAAAQCAYAAACY9GuWAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF6SURBVHgB7dwxTlRRFAbgcx5oLFnCLAE76BijBRXuQHdAaaEJjobCSlyBugLpaEjARqZzduAsYQotIM4c52kgSIAEeOX3JTf3nnPvBv7c5GRcY2tvpRcAAABwicH6cHzVXV5svNpffTrfNudrLQAAAOAaFTlaWJjtvOkPP5/vn4XNrYO1pen0+EsImQAAANxQZoybpvqD/r/fzr9hsw2as9nx96roBQAAANzC+cDZtI3Z7OS9oAkAAMBdtLlyOs2P7Tm3Dlba4kcAAABAB6qq39S0NgIAAAC60uRGU5nLAQAAAB3JquUmAAAAoENVuSRsAgAA0KnMmjTTiK8BAAAAHanMUXOvebCbEZMAAACADvw+qQ/NoH84mVUMAgAAAO6oMnberQ/Hedp4ub/6aV48CwAAALiFqhxtP/n2sD2fDQjafnz0PLJeBwAAANxQ+6P56+f9/mmdFx+82FvpLS7mZmYtV2YvAAAA4BJZMamKw2Yhdt8+Ovpv+OwfkWBrDpMzZ6oAAAAASUVORK5CYII=",
+      "e": 1
+    },
+    {
+      "id": "image_2",
+      "w": 284,
+      "h": 134,
+      "u": "",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACGCAYAAAAPfjVxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOuSURBVHgB7dyxUhtXGIbhIwpoTBOlgQsgTWhC5Rtwlbt1lStwRRrchD5QkUY0uFHODyuNZAtZaLRfYT/PzPEaVtu+8+8eLZO2p/l8ft4Pv/RVx2lfx32dNOBH89TXY1+zvh76uptMJvdtD5O3fLhHpoLy+7DEBX5eFZ+KznWPz2zXi3YKzhCaP/q6bADrbtuO4flucHpsapq5aiYa4HUVm4rO7bYPbQ1Oj837ZqoBdnfTo/PptZMbgzPcQn3o66wBvE09WP7Yw/Pl6xNHr1zwZxMbYD+1a/1h04lvgjPcRk0bwP7Oh5asWQtO/8BF88wGOIzLYdNpaRmcfuK0vexGARzKVW/L8eKH1QmnYnPaAA6nNqCWg8xzcIbp5qIBHN7lYspZTDhupYAxPT/LWQTHFjgwpufNqKPhrW/PboAxnfTWnNWEY7oBEqYVnF8bwPjOKzjvGsD4poIDpBxXcPydGyDh5KgBhAgOECM4QIzgADGCA8QIDhAjOECM4AAxggPECA4QIzhAjOAAMYIDxAgOECM4QIzgADGCA8QIDhAjOECM4AAxggPECA4QIzhAjOAAMYIDxAgOECM4QIzgADGCA8QIDhAjOECM4AAxggPECA4QIzhAjOAAMYIDxAgOECM4QIzgADGCA8QIDhAjOECM4AAxggPECA4QIzhAjOAAMYIDxAgOECM4QIzgADGCA8QIDhAjOECM4AAxggPECA4QIzhAjOAAMYIDxAgOECM4QIzgADGCA8QIDhAjOECM4AAxggPECA4QIzhAjOAAMYIDxAgOECM4QIzgADGCA8QIDhAjOECM4AAxggPECA4QIzhAjOAAMYIDxAgOECM4QIzgADGCA8QIDhAjOECM4AAxggPECA4QIzhATAXnqQGM76mC86UBjG9WwfmvAYzvsYLzbwMY34MJB0i5O5pMJnfNg2NgXLPemvvFtvjnBjCeGmyW38O5aQDjua5/noPTR53aGhcdYAz/9MY81n9Wv2lcBfIsBzikWRumm7IMzjDl/N0ADud6Md2UtXep+om6rXJrBRzCTW/K7eovvnl5s3/gUz/cN4D9PQwtWfPa2+J/1QUN4O1qC/zjphOTbVfN5/P3/XDZAHZzs2myWdganNKjc9EPV32dNoDNaoe7HhBv/RLxd4NTenTetZfo/NYA1tVG0/Ww073VTsFZWAnPeTPxwM+sJpoKzeddQrPwpuCs6vGp6Jz1NW0v8akYnTTgR1NxqajURlI9EK4dqL12sv8HBpORAAvB1zIAAAAASUVORK5CYII=",
+      "e": 1
+    }
+  ],
+  "layers": [
+    {
+      "ddd": 0,
+      "ind": 1,
+      "ty": 2,
+      "nm": "graph_line.png",
+      "cl": "png",
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [257.5, 103, 0], "ix": 2, "l": 2 },
+        "a": { "a": 0, "k": [18.5, 287, 0], "ix": 1, "l": 2 },
+        "s": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 0,
+              "s": [28.223, 22.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 93,
+              "s": [28.223, 12.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 178,
+              "s": [28.223, 25.223, 100]
+            },
+            { "t": 268, "s": [28.223, 22.223, 100] }
+          ],
+          "ix": 6,
+          "l": 2
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 600,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 2,
+      "ty": 2,
+      "nm": "graph_line.png",
+      "cl": "png",
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [218.583, 103, 0], "ix": 2, "l": 2 },
+        "a": { "a": 0, "k": [18.5, 287, 0], "ix": 1, "l": 2 },
+        "s": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 0,
+              "s": [28.223, 18.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 93,
+              "s": [28.223, 16.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 178,
+              "s": [28.223, 6.223, 100]
+            },
+            { "t": 268, "s": [28.223, 18.223, 100] }
+          ],
+          "ix": 6,
+          "l": 2
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 600,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 3,
+      "ty": 2,
+      "nm": "graph_line.png",
+      "cl": "png",
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [179.667, 103, 0], "ix": 2, "l": 2 },
+        "a": { "a": 0, "k": [18.5, 287, 0], "ix": 1, "l": 2 },
+        "s": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 0,
+              "s": [28.223, 22.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 93,
+              "s": [28.223, 7.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 178,
+              "s": [28.223, 4.223, 100]
+            },
+            { "t": 268, "s": [28.223, 22.223, 100] }
+          ],
+          "ix": 6,
+          "l": 2
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 600,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 4,
+      "ty": 2,
+      "nm": "graph_line.png",
+      "cl": "png",
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [142, 103, 0], "ix": 2, "l": 2 },
+        "a": { "a": 0, "k": [22.929, 287, 0], "ix": 1, "l": 2 },
+        "s": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 0,
+              "s": [28.223, 12.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 93,
+              "s": [28.223, 5.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 178,
+              "s": [28.223, 14.223, 100]
+            },
+            { "t": 268, "s": [28.223, 12.223, 100] }
+          ],
+          "ix": 6,
+          "l": 2
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 600,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 5,
+      "ty": 2,
+      "nm": "graph_line.png",
+      "cl": "png",
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [101.833, 103, 0], "ix": 2, "l": 2 },
+        "a": { "a": 0, "k": [18.5, 287, 0], "ix": 1, "l": 2 },
+        "s": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 0,
+              "s": [28.223, 25.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 93,
+              "s": [28.223, 23.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 178,
+              "s": [28.223, 7.223, 100]
+            },
+            { "t": 268, "s": [28.223, 25.223, 100] }
+          ],
+          "ix": 6,
+          "l": 2
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 600,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 6,
+      "ty": 2,
+      "nm": "graph_line.png",
+      "cl": "png",
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [62.917, 103, 0], "ix": 2, "l": 2 },
+        "a": { "a": 0, "k": [18.5, 287, 0], "ix": 1, "l": 2 },
+        "s": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 0,
+              "s": [28.223, 14.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 93,
+              "s": [28.223, 12.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 178,
+              "s": [28.223, 25.223, 100]
+            },
+            { "t": 268, "s": [28.223, 14.223, 100] }
+          ],
+          "ix": 6,
+          "l": 2
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 600,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 7,
+      "ty": 2,
+      "nm": "graph_line.png",
+      "cl": "png",
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [24, 103, 0], "ix": 2, "l": 2 },
+        "a": { "a": 0, "k": [18.5, 287, 0], "ix": 1, "l": 2 },
+        "s": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 0,
+              "s": [28.223, 16.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 93,
+              "s": [28.223, 8.223, 100]
+            },
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.333, 0.333, 0.333], "y": [0, 0, 0] },
+              "t": 178,
+              "s": [28.223, 21.223, 100]
+            },
+            { "t": 268, "s": [28.223, 16.223, 100] }
+          ],
+          "ix": 6,
+          "l": 2
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 600,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 8,
+      "ty": 2,
+      "nm": "graph_line1.png",
+      "cl": "png",
+      "refId": "image_1",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [142, 113, 0], "ix": 2, "l": 2 },
+        "a": { "a": 0, "k": [461.5, 8, 0], "ix": 1, "l": 2 },
+        "s": { "a": 0, "k": [28.223, 28.223, 100], "ix": 6, "l": 2 }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 600,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 9,
+      "ty": 2,
+      "nm": "Rectangle white.png",
+      "cl": "png",
+      "refId": "image_2",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [142, 67, 0], "ix": 2, "l": 2 },
+        "a": { "a": 0, "k": [142, 67, 0], "ix": 1, "l": 2 },
+        "s": { "a": 0, "k": [100, 100, 100], "ix": 6, "l": 2 }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 600,
+      "st": 0,
+      "bm": 0
+    }
+  ],
+  "markers": []
+}

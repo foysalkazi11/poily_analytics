@@ -1,0 +1,111 @@
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include respond(sm-phone){
+        grid-template-columns: 1fr;
+   }
+
+    .card {
+        float: left;
+        height: 15rem;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        position: relative;
+        padding: 1.5rem;
+        transition: opacity 0.3s ease-out;
+        width: 30rem;
+        @include respond(tab-land ){
+            width: auto;
+       }
+        
+        &:after {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) -10%, $color-white 100%);
+            bottom: -0.1rem;
+            content: "";
+            display: block;
+            height: 5rem;
+            left: 0.1rem;
+            right: 0.1rem;
+            position: absolute;
+        }
+        .card-content {
+            background-color: $color-white;
+        
+            color: $color-drak-greay-1;
+            font-size: 1.6rem;
+            left: 0;
+            line-height: 1.7;
+            max-height: 15rem;
+            min-height: 15rem;
+            overflow: hidden;
+            padding: 1.5rem;
+            position: absolute;
+            top: 0;
+            transition: all 0.3s;
+            transition-property: max-height, min-height, box-shadow, background-color;
+            border-radius: 2rem;
+
+            .card-title {
+                font-family: $secondary-font;
+                font-size: 1.8rem;
+                line-height: 1.2;
+                margin-top: 0;
+            }
+            .d-flex {
+                margin-bottom: 1rem;
+            }
+            p {
+                margin-bottom: 1.5rem;
+                margin-top: 0;
+
+            &:last-child{
+             margin-bottom: 0;
+            }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.card>a:hover .card-content,
+.card>a:focus .card-content {
+    box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.16), 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.12);
+    max-height: 27.5rem;
+    min-height: auto;
+    overflow: auto;
+    transition: max-height 0.3s 0.5s, min-height 0.3s 0.5s, box-shadow 0.5s 0.4s, border-color 0.2s;
+    z-index: 10000;
+    border: 0.1rem solid $color-primary;
+}
+
+.card-grid:hover .card:not(:hover) {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-out 0.5s;
+}
+
+
+
+/* width */
+.card-content::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  /* Track */
+  .card-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.5rem $color-drak-greay; 
+    border-radius: 1rem;
+  }
+   
+  /* Handle */
+  .card-content::-webkit-scrollbar-thumb {
+    background: $color-primary; 
+    border-radius: 1rem;
+  }

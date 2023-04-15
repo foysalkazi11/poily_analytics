@@ -1,0 +1,33 @@
+.benefit__card {
+    text-align: center;
+    max-width: 85%;
+    margin: auto;
+    @include respond(sm-phone){
+        max-width: 100%;
+        margin-bottom: 3rem;
+        }
+
+    .benefit__card--img img {
+        height: 15rem;
+    }
+    .benefit__card--title {
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1.1;
+        color: $color-black;
+        font-family: $secondary-font;
+    }
+    .benefit__border--img {
+        padding: 1.4rem 0;
+    }
+    .benefit__card--description {
+        font-size: 1.6rem;
+        line-height: 1.4;
+        color: $color-black;
+        opacity: 0.6;
+    }
+}
+
+
+
+

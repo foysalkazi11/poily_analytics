@@ -1,0 +1,24 @@
+@import "../../../styles/abstracts/variables";
+.contractUsAsideContainer {
+  border: 1rem solid $color-green-light;
+  padding: 2rem 0;
+  border-radius: 10px;
+
+  .text {
+    color: $color-primary;
+    text-decoration: underline;
+    font-size: 2rem;
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .list {
+    list-style-type: disc;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid $shadowGrey;
+    font-size: 1.6rem;
+    margin-left: 5rem;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

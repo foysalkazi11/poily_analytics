@@ -1,0 +1,141 @@
+.active-secondary-color {
+  color: $color-secondary-light !important;
+}
+.active-primary-color {
+  color: $color-primary !important;
+}
+.u-center-text {
+  text-align: center !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 10rem 0;
+}
+.pt-0 {
+  padding-top: 0;
+}
+
+.text__green {
+  color: $color-primary;
+}
+
+.text__black {
+  color: $color-black;
+}
+
+.d-flex {
+  display: flex;
+}
+.flex-one {
+  flex: 1;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.flex-direction-col {
+  flex-direction: column;
+}
+
+.position_relative {
+  position: relative;
+}
+.position_absolute {
+  position: absolute;
+}
+.z-index-2 {
+  z-index: 2;
+  position: relative;
+}
+
+.gap-3 {
+  gap: 1rem;
+}
+
+.text__element,
+.text-back-element {
+  position: relative;
+}
+
+.text__element--img {
+  position: absolute;
+  top: -3rem;
+  right: -6rem;
+  @include respond(tab-port) {
+    top: -1rem;
+    right: -3rem;
+    width: 4rem;
+  }
+  @include respond(sm-phone) {
+    top: -2rem;
+    right: -4rem;
+  }
+}
+
+.text-back-element::before {
+  content: "";
+  position: absolute;
+  background-image: url(/img/content-circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -1.3rem;
+  left: -4.4rem;
+  width: 20rem;
+  height: 15rem;
+  transform: rotate(-5deg);
+}
+
+.padding_bottom--10 {
+  padding-bottom: 1rem;
+}
+.padding_top--10 {
+  padding-top: 1rem;
+}
+
+.padding_bottom--20 {
+  padding-bottom: 2rem;
+}
+.padding_top--20 {
+  padding-top: 2rem;
+}
+.padding_top--40 {
+  padding-top: 4rem;
+}
+.paddting__top--16 {
+  padding-top: 1.6rem;
+}
+
+.padding__bottom_60 {
+  padding-bottom: 5.5rem;
+}
+.margin-bottom-40 {
+  margin-bottom: 4rem;
+}
+.margin-top-40 {
+  margin-top: 4rem;
+}
+.margin-top-20 {
+  margin-top: 2rem;
+}
+.margin-bottom-20 {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 2.4rem;
+}
+
+.max__80 {
+  max-width: 65%;
+  margin: auto;
+  @include respond(tab-port) {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+.review_wrap{
+    margin-left: auto;
+    max-width: 60%;
+    margin-right: auto;
+    @include respond(tab){
+        max-width: 80%;
+    }
+    .review__img {
+        width: 10rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .review__name {
+        font-size: 2rem;
+        line-height: 1;
+        color: $color-secondary-light;
+        font-weight: 700;
+    }
+    .review__description {
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        text-align: center;
+        color: $color-black;
+        opacity: 0.9;
+    }
+}
+
+

@@ -1,0 +1,39 @@
+
+
+.why__card {
+   border-radius: 2.5rem;
+    padding: 5rem 3rem;
+    text-align: center;
+
+    @include respond(tab-port){
+       margin-bottom: 2rem;
+      }
+
+        
+    .why__card--title {
+        font-family: $secondary-font;
+        font-size: 3.2rem;
+        line-height: 1.1;
+        color: $color-secondary-light;
+        padding-bottom: 2rem;
+    }
+
+    .why__card--description {
+        font-size: 1.9rem;
+        line-height: 1.5;
+        color: $color-drak-greay;
+    }
+
+}
+
+.color-red-light {
+    background: $color-red-light;
+}
+
+.color-green-light {
+    background: $color-green-light;
+
+    .why__card--title{
+        color: $color-primary;
+    }
+}

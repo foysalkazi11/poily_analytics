@@ -1,0 +1,351 @@
+// @import url(../font.css);
+
+// banner section
+
+.section_banner {
+  background: $color-bg-primary;
+  padding: 15rem 0 6rem;
+  position: relative;
+
+  .green-line-lottie {
+    position: absolute;
+    bottom: 13%;
+    right: 7%;
+    z-index: 0;
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+  .data-lottie {
+    position: absolute;
+    top: 41%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    @include respond(laptop) {
+      position: absolute;
+      top: 43%;
+      left: 12%;
+      lottie-player {
+        width: 28rem;
+        @include respond(laptop) {
+          width: 20rem;
+        }
+      }
+    }
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+  .bar-graph-lottie {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    @include respond(laptop) {
+      left: 5%;
+      lottie-player {
+        width: 30rem;
+        @include respond(laptop) {
+          width: 23rem;
+        }
+      }
+    }
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  .lady-lottie {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+
+    @include respond(tab-port) {
+      lottie-player {
+        width: 80%;
+        margin-left: auto;
+        @include respond(laptop) {
+        }
+      }
+      right: 0%;
+    }
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+}
+
+// why section css start
+
+/* who section start*/
+
+.section__who {
+  position: relative;
+
+  .hospital__img {
+    position: absolute;
+    bottom: 12rem;
+    right: 0;
+    width: 50%;
+    @include respond(tab) {
+      display: none;
+    }
+  }
+}
+
+/* who section end*/
+
+/* our service section start*/
+
+.section__service {
+  position: relative;
+  padding-bottom: 0;
+
+  .our__service--img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    @include respond(tab) {
+      display: none;
+    }
+  }
+}
+
+/* our service section end*/
+
+/*work section start*/
+
+/*work section end*/
+
+/* section__benift */
+
+.section__benefit {
+  position: relative;
+  padding: 7rem 0;
+
+  .benefit__top--img {
+    position: absolute;
+    top: 0;
+    top: -3rem;
+    width: 100%;
+    @include respond(tab) {
+      top: -1rem;
+    }
+  }
+  .benefit__bottom--img {
+    position: absolute;
+    width: 100%;
+    bottom: -3rem;
+    @include respond(tab) {
+      bottom: -2rem;
+    }
+  }
+}
+
+/* section__benift end*/
+
+/* section__review */
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: $color-black;
+  color: $color-white;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.owl-prev {
+  display: none !important;
+}
+.owl-next {
+  display: none;
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 3.4rem;
+
+  button.owl-dot {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    background: $color-drak-greay-2 !important;
+    margin: 0 0.3rem;
+  }
+}
+
+.owl-dots button.owl-dot.active {
+  background-color: $color-primary !important;
+}
+
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: $color-drak-greay-2 !important;
+}
+
+.section__slide span {
+  font-size: 7rem;
+  position: relative;
+  top: -0.5rem;
+}
+
+.owl-nav button:focus {
+  outline: none;
+}
+/* section__review end*/
+
+/* section__team */
+%team_member_hover {
+  &:hover .team_member,
+  &:hover .member_desc {
+    visibility: visible;
+  }
+  &:hover .team__img {
+    transform: scale(1.1);
+    border-color: $color-secondary-light;
+  }
+}
+.section__team {
+  position: relative;
+
+  .team__top--img {
+    position: absolute;
+    top: 0;
+    top: -3rem;
+    width: 100%;
+    @include respond(tab) {
+      top: -1rem;
+    }
+  }
+  .team__bottom--img {
+    position: absolute;
+    width: 100%;
+    bottom: -3rem;
+    @include respond(sm-phone) {
+      bottom: -1rem;
+    }
+  }
+  .container {
+    position: relative;
+
+    .team_member_container {
+      position: relative;
+      height: 25rem;
+      .team__img {
+        outline: none;
+        transition: $transition;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        @include respond(phone) {
+          border-color: $color-secondary-light;
+        }
+      }
+
+      @include respond(tab-land) {
+        .team__img {
+          width: 80%;
+        }
+      }
+      @include respond(tab-port) {
+        .team__img {
+          width: 70%;
+        }
+      }
+
+      @include respond(phone) {
+        .team__img {
+          width: 50%;
+        }
+      }
+      @include respond(tab) {
+        .team_center_img img {
+          width: 26%;
+        }
+      }
+
+      .team_member {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 1.2;
+        color: $color-black;
+        padding-top: 1.6rem;
+        visibility: hidden;
+        transition: $transition;
+        @include respond(phone) {
+          visibility: visible;
+          font-size: 2.4rem;
+        }
+      }
+      .member_desc {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        text-align: center;
+        color: $color-black;
+        opacity: 0.6;
+        padding-top: 0.8rem;
+        visibility: hidden;
+        transition: $transition;
+        @include respond(phone) {
+          visibility: visible;
+          font-size: 2.4rem;
+        }
+      }
+
+      .member_0 {
+        @include absCenter;
+        @extend %team_member_hover;
+        @include respond(tab-port) {
+          top: 20%;
+        }
+      }
+      .member_1 {
+        position: absolute;
+        top: -10%;
+        left: 15%;
+        @extend %team_member_hover;
+      }
+      .member_2 {
+        position: absolute;
+        top: 25%;
+        left: 0%;
+        @extend %team_member_hover;
+      }
+      .member_3 {
+        position: absolute;
+        top: 50%;
+        left: 29%;
+        @extend %team_member_hover;
+      }
+      .member_4 {
+        position: absolute;
+        top: 50%;
+        right: 28%;
+        @extend %team_member_hover;
+      }
+      .member_5 {
+        position: absolute;
+        top: 44%;
+        right: 0%;
+        @extend %team_member_hover;
+      }
+
+      .member_6 {
+        position: absolute;
+        top: -15%;
+        right: 15%;
+        @extend %team_member_hover;
+        // @include respond(sm-phone) {
+        //   top: 21%;
+        // }
+      }
+    }
+  }
+}
+
+/* section__team end*/
