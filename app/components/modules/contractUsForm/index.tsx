@@ -11,6 +11,7 @@ import Textfield from "../../elements/textField/Textfield.component";
 import Textarea from "../../elements/textArea/Textarea.component";
 import submitDataToZohoForms from "@/app/api/submitFormToZoho";
 import SubmitDataToZohoForms from "@/app/types/submitDataToZohoFormsType";
+import zf_ValidateAndSubmit from "../../../constants/zohoFormValidationFun/validation";
 
 const industryOptions: Option[] = [
   {
@@ -51,27 +52,28 @@ const ContractUsForm = () => {
   const methods = useForm<FormInputs>();
 
   const onSubmit: SubmitHandler<FormInputs> = async (data: FormInputs) => {
-    const arrangeData: SubmitDataToZohoForms[] = Object.entries(data)?.map(
-      ([key, value]) => ({ name: key, value: value || "" })
-    );
-    try {
-      const result = await submitDataToZohoForms(arrangeData);
-      console.log(result);
+    zf_ValidateAndSubmit();
+    // const arrangeData: SubmitDataToZohoForms[] = Object.entries(data)?.map(
+    //   ([key, value]) => ({ name: key, value: value || "" })
+    // );
+    // try {
+    //   const result = await submitDataToZohoForms(arrangeData);
+    //   console.log(result);
 
-      if (result.Status === "Success") {
-        console.log(result);
-        setSuccess(true);
-        setError(null);
-      } else {
-        console.log(result);
-        setSuccess(false);
-        setError(result.Message);
-      }
-    } catch (error: any) {
-      console.log(error);
-      setSuccess(false);
-      setError(error.message);
-    }
+    //   if (result.Status === "Success") {
+    //     console.log(result);
+    //     setSuccess(true);
+    //     setError(null);
+    //   } else {
+    //     console.log(result);
+    //     setSuccess(false);
+    //     setError(result.Message);
+    //   }
+    // } catch (error: any) {
+    //   console.log(error);
+    //   setSuccess(false);
+    //   setError(error.message);
+    // }
   };
 
   const {
@@ -84,88 +86,122 @@ const ContractUsForm = () => {
   return (
     <>
       <h1 className="padding_bottom--20 padding_top--20"> Talk with us</h1>
-      <FormProvider {...methods}>
-        <form onSubmit={methods.handleSubmit(onSubmit)}>
-          <Combobox
-            name="industry"
-            label="Industry"
-            options={industryOptions}
-          />
-          <div className="row padding_top--20 padding_bottom--20">
-            <div className="col-lg-6-fluid ">
-              <Textfield
-                name="firstName"
-                required
-                label="First Name"
-                showError={{
-                  required: errors["firstName"] ? true : false,
-                  message: `Please fill the value of first name field`,
-                }}
-              />
-            </div>
-            <div className="col-lg-6-fluid ">
-              <Textfield
-                name="lastName"
-                required
-                label="Last Name"
-                showError={{
-                  required: errors["lastName"] ? true : false,
-                  message: `Please fill the value of last name field`,
-                }}
-              />
-            </div>
-          </div>
-          <Textfield
-            name="email"
-            type="email"
-            required
-            label="Email"
-            validationParams={{
-              pattern: {
-                value:
-                  /^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,5})$/,
-                message: "Enter valid email",
-              },
-            }}
-            showError={{
-              required: errors["email"] ? true : false,
-              message: errors["email"]?.message as string,
-            }}
-          />
-          <Textfield
-            name="phone"
-            type="number"
-            required
-            label="Phone"
-            validationParams={{
-              pattern: {
-                value: /^(?:\+1|1)?(?:[\s.-]*\d){10}$/,
-                message: "Enter valid phone number",
-              },
-            }}
-            showError={{
-              required: errors["phone"] ? true : false,
-              message: errors["phone"]?.message as string,
-            }}
-          />
-          <Textfield
-            name="website"
-            label="Website"
-            className="padding_bottom--20"
-          />
-          <Textarea
-            name="statement"
-            label="What is your program or initiative problem statement?"
-            required
-            showError={{
-              required: errors["statement"] ? true : false,
-              message: `Please fill the value of statement area`,
-            }}
-          />
 
-          <button className="btn ptn-primary margin-top-20">Submit</button>
-        </form>
-      </FormProvider>
+      <form
+        action="https://forms.zohopublic.com/poilyportal/form/TalkwithUs/formperma/3-X_21fYWFUKEIzJ3UJsZlwcRnizqDL6Bn2sGSv7ek4/htmlRecords/submit"
+        name="form"
+        method="POST"
+        accept-charset="UTF-8"
+        encType="multipart/form-data"
+        id="form"
+        onSubmit={zf_ValidateAndSubmit}
+      >
+        <input type="hidden" name="zf_redirect_url" value="" />
+        {/* https://poily-analytics.vercel.app/?submitted=true */}
+        {/* <div>
+          <label className="zf-labelName">Industry</label>
+
+          <select className="zf-form-sBox" name="Dropdown" data-checktype="c1">
+            <option selected value="-Select-">
+              -Select-
+            </option>
+            <option value="Government">Government</option>
+            <option value="Insurer">Insurer</option>
+            <option value="Non-profit">Non-profit</option>
+            <option value="Food&#x20;Retailer">Food Retailer</option>
+            <option value="Health&#x20;System">Health System</option>
+          </select>
+          <p
+            id="Dropdown_error"
+            className="zf-errorMessage"
+            style={{ display: "none" }}
+          >
+            Invalid value
+          </p>
+        </div>
+        <div>
+          <label className="zf-labelName">Name</label>
+          <input type="text" maxLength={225} name="Name_First" placeholder="" />
+        </div>
+        <div>
+          <label className="zf-labelName">Name</label>
+          <input type="text" maxLength={225} name="Name_Last" placeholder="" />
+        </div> */}
+        <Combobox name="industry" label="Industry" options={industryOptions} />
+        <div className="row padding_top--20 padding_bottom--20">
+          <div className="col-lg-6-fluid ">
+            <Textfield
+              name="firstName"
+              required
+              label="First Name"
+              showError={{
+                required: errors["firstName"] ? true : false,
+                message: `Please fill the value of first name field`,
+              }}
+            />
+          </div>
+          <div className="col-lg-6-fluid ">
+            <Textfield
+              name="lastName"
+              required
+              label="Last Name"
+              showError={{
+                required: errors["lastName"] ? true : false,
+                message: `Please fill the value of last name field`,
+              }}
+            />
+          </div>
+        </div>
+        <Textfield
+          name="email"
+          type="email"
+          required
+          label="Email"
+          validationParams={{
+            pattern: {
+              value: /^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,5})$/,
+              message: "Enter valid email",
+            },
+          }}
+          showError={{
+            required: errors["email"] ? true : false,
+            message: errors["email"]?.message as string,
+          }}
+        />
+        <Textfield
+          name="phone"
+          type="number"
+          required
+          label="Phone"
+          validationParams={{
+            pattern: {
+              value: /^(?:\+1|1)?(?:[\s.-]*\d){10}$/,
+              message: "Enter valid phone number",
+            },
+          }}
+          showError={{
+            required: errors["phone"] ? true : false,
+            message: errors["phone"]?.message as string,
+          }}
+        />
+        <Textfield
+          name="website"
+          label="Website"
+          className="padding_bottom--20"
+        />
+        <Textarea
+          name="statement"
+          label="What is your program or initiative problem statement?"
+          required
+          showError={{
+            required: errors["statement"] ? true : false,
+            message: `Please fill the value of statement area`,
+          }}
+        />
+        <button type="submit" className="btn ptn-primary margin-top-20">
+          Submit
+        </button>
+      </form>
     </>
   );
 };

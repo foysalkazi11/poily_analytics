@@ -96,6 +96,7 @@ const Textfield = forwardRef((props: TextfieldProps, ref) => {
 
       <div className={`${unit ? styles["field-with-unit"] : ""}`}>
         <input
+          name={name}
           id={label}
           placeholder={placeholder}
           type={type}

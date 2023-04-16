@@ -81,6 +81,7 @@ const Combobox = (props: ComboboxProps) => {
         </label>
       )}
       <select
+        name={name}
         id={label}
         value={value}
         disabled={disabled}

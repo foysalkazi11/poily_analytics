@@ -42,6 +42,7 @@ const Textarea = (props: TextareaProps) => {
         </label>
       )}
       <textarea
+        name={name}
         className={styles["custom-input"]}
         placeholder={placeholder}
         {...register(name, {
